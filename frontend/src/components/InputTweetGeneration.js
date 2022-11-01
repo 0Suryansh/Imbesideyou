@@ -8,7 +8,7 @@ import { toastStyle } from '../utility/helper'
 import { Configuration, OpenAIApi } from "openai"
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 

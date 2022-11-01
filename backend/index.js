@@ -8,6 +8,8 @@ const cors = require("cors");
 dotenv.config({ path: "./config.env" })
 connection();
 
+const port=process.env.PORT
+
 app.use(
     cors({
       methods: "GET,POST,PATCH,PUT,DELETE",
@@ -24,6 +26,6 @@ app.get('/',(req,res)=>{
 })
 
 
-app.listen(9001,()=>{
+app.listen(port,()=>{
     console.log("server is running")
 })
